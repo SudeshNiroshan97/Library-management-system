@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneIssueBook" prefHeight="559.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IssueBookFormController">
+   <children>
+      <AnchorPane prefHeight="165.0" prefWidth="600.0" style="-fx-background-color: #dfe6e9;">
+         <children>
+            <TextField fx:id="txtMemberName" layoutX="341.0" layoutY="116.0" prefHeight="33.0" prefWidth="223.0" promptText="Name" />
+            <ComboBox fx:id="cmb_memberID" layoutX="35.0" layoutY="116.0" prefHeight="33.0" prefWidth="223.0" promptText="Member ID" />
+            <Button fx:id="btnhome" layoutX="452.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_home" prefHeight="26.0" prefWidth="112.0" text="Home">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="51.0" fitWidth="50.0" layoutX="38.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/bookshelf.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_addBook" layoutX="147.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnAddBook_OnAction" prefHeight="26.0" prefWidth="112.0" text="+New Issue">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="txtIssueID" layoutX="39.0" layoutY="73.0" prefHeight="33.0" prefWidth="192.0" text="Issue ID :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtDate" layoutX="341.0" layoutY="73.0" prefHeight="33.0" prefWidth="192.0" text="Date :">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tbl_IssueBook" layoutX="30.0" layoutY="286.0" prefHeight="200.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="tblCol_BookID" prefWidth="106.0" text="Book ID" />
+          <TableColumn fx:id="tblCol_Title" prefWidth="179.0" text="Title" />
+            <TableColumn fx:id="tblCol_Author" prefWidth="125.0" text="Author" />
+            <TableColumn fx:id="tblCol_Action" prefWidth="128.0" text="Action" />
+            <TableColumn fx:id="tblCol_total" minWidth="0.0" prefWidth="0.0" />
+            <TableColumn fx:id="tblCol_delete" minWidth="0.0" prefWidth="0.0" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmb_BookID" layoutX="34.0" layoutY="181.0" prefHeight="33.0" prefWidth="223.0" promptText="Book ID" />
+      <TextField fx:id="txt_title" layoutX="342.0" layoutY="181.0" prefHeight="33.0" prefWidth="223.0" promptText="Title" />
+      <TextField fx:id="txt_Author" layoutX="34.0" layoutY="232.0" prefHeight="33.0" prefWidth="223.0" promptText="Author" />
+      <Button fx:id="btnAdd" layoutX="342.0" layoutY="232.0" mnemonicParsing="false" onAction="#btn_Add" prefHeight="33.0" prefWidth="223.0" text="ADD">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnIssueBook" layoutX="373.0" layoutY="503.0" mnemonicParsing="false" onAction="#btn_IssueBook_OnAction" prefHeight="33.0" prefWidth="192.0" text="Issue Book">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="txtNumberOfBooks" layoutX="34.0" layoutY="500.0" prefHeight="33.0" prefWidth="192.0" text="Number of Books :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

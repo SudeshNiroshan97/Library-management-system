@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPainMainForm" prefHeight="371.0" prefWidth="688.0" style="-fx-background-image: E:\Edu\IJSE\DEP week 4\26-08-2019\LibraryManagement_1.0\src\assets\Library (1).png;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFormController">
+   <children>
+      <ImageView fitHeight="387.0" fitWidth="696.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Library%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgBooks" fitHeight="110.0" fitWidth="102.0" layoutX="61.0" layoutY="128.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/book.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgIssueBooks" fitHeight="102.0" fitWidth="102.0" layoutX="357.0" layoutY="128.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/bookshelf.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgMembers" fitHeight="102.0" fitWidth="102.0" layoutX="208.0" layoutY="128.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/reading.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgHandleReturns" fitHeight="110.0" fitWidth="122.0" layoutX="512.0" layoutY="116.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/book%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="88.0" layoutY="238.0" text="Books">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="507.0" layoutY="238.0" text="Handle Returns">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="362.0" layoutY="238.0" text="Issue Books">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="222.0" layoutY="238.0" text="Members">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="235.0" layoutY="40.0" text="Library Management">
+         <font>
+            <Font name="Corbel Light" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
